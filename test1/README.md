@@ -1,6 +1,6 @@
 # 实验1：SQL语句的执行计划分析与优化指导 #
 
-# 姓名：殷入风 学号：201810414425 #
+# 姓名：王澳航  学号：201810414421 #
 
 ----------
 
@@ -23,12 +23,12 @@
 ## 样例查询语句结果 ##
 
 第一条查询语句结果：
-![Image text](https://github.com/ColorLenya/oracle/blob/main/test1/img/1615821541118-1615866841634.png)
+![Image text](https://github.com/LEBron-wan/oracle/blob/main/test1/img/1.3.png)
 
 第二条查询语句结果：
-![Image text](https://github.com/ColorLenya/oracle/blob/main/test1/img/1615821444031.png)
+![Image text](https://github.com/LEBron-wan/oracle/blob/main/test1/img/1.6.png)
 
-![Image text](https://github.com/ColorLenya/oracle/blob/main/test1/img/1615863933567.png)
+![Image text](https://github.com/LEBron-wan/oracle/blob/main/test1/img/1.5.png)
 
 ## 样例查询语句分析 ##
 
@@ -45,11 +45,11 @@ select departments.department_name as "部门", count(employees.job_id) as "部�
 
 ## 查询语句、结果截图 ##
 
-查询语句：![Image text](https://github.com/ColorLenya/oracle/blob/main/test1/img/image-20210316115738022.png)
+查询语句：![Image text](https://github.com/LEBron-wan/oracle/blob/main/test1/img/1.7.png)
 
 
-查询结果：![Image text](https://github.com/ColorLenya/oracle/blob/main/test1/img/image-20210316115758738.png)
+查询结果：![Image text](https://github.com/LEBron-wan/oracle/blob/main/test1/img/1.8.png)
 
 ## 实验总结 ##
 
-本次实验是第一次对oracle数据库的查询，相比于Mysql数据库，前者跟后者的差距并不大，可能还需要后续更多的实验，我才能更加深刻感受到这两个数据库的不同之处。但在我看来，oracle数据库的查询，相较于Mysql有着更高的效率。
+这是本学期第一次的oracle实验，相对而言，实验难度不大，主要是考察对Oracle的基础了解，考察深度不深，所以还好，但是在提交的过程中却发生了大问题，一直解决不了，还好最后按照老师的Github上的步骤解决了，可能还是由于对GitHub的生疏吧。希望以后有所改善。
