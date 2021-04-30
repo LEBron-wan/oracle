@@ -110,9 +110,9 @@ WHERE a.tablespace_name = b.tablespace_name
 ![image](./img/查询一个分区中的数据.png)
 4.统计用户的所有表并查询统计信息：
 
-![image](./统计用户的所有表并查询表的统计信息.png)
+![image](./img/统计用户的所有表并查询表的统计信息.png)
 
-![image](./统计用户的所有表并查询表的统计信息2.png)
+![image](./img/统计用户的所有表并查询表的统计信息2.png)
 
 
 5.表空间使用：
@@ -121,7 +121,7 @@ WHERE a.tablespace_name = b.tablespace_name
 6.查看数据文件的大小：
 
 
-![image](./数据文件使用情况.png)
+![image](./img/数据文件使用情况.png)
 
 7.递归查询某个员工及其所有下属子员工：
 ![image](./img/递归查询某个员工及其所有下属子员工.png)
