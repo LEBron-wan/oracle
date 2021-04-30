@@ -34,10 +34,7 @@ SQL> exit
 
  语句“ALTER USER new_user QUOTA 50M ON users;”是指授权new_user用户访问users表空间，空间限额是50M。
  ## 实验截图：
- ![Image text](./img/1.png)
- ![Image text](./img/2.png)
- ![Image text](./img/3.png)
- ![Image text](./img/4.png)
+ ![Image text](./img/创号.png)
 
  
 
@@ -79,8 +76,8 @@ SQL> exit
 
 > 测试一下同学用户之间的表的共享，只读共享和读写共享都测试一下。
  ## 实验截图：
- ![Image text](./img/5.png)
- ![Image text](./img/6.png)
+ ![Image text](./img/wah.png)
+ ![Image text](./img/hr.png)
 
 ## 数据库和表空间占用分析
 
@@ -111,6 +108,7 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
 - autoextensible是显示表空间中的数据文件是否自动增加。
 - MAX_MB是指数据文件的最大容量。
  ## 实验截图：
+ ![Image text](./img/使用率.png)
 ## 实验总结 ##
 
 这是本学期第一次的oracle实验，相对而言，实验难度不大，主要是考察对Oracle的基础了解，考察深度不深，所以还好，但是在提交的过程中却发生了大问题，一直解决不了，还好最后按照老师的Github上的步骤解决了，可能还是由于对GitHub的生疏吧。希望以后有所改善。
