@@ -6,7 +6,7 @@
 假设有一个生产某个产品的单位，单位接受网上订单进行产品的销售。通过实验模拟这个单位的部分信息：员工表，部门表，订单表，订单详单表。
 ## 实验内容：
 1.以system身份登录并创建new_wah角色并授权：
-![image](./img/sys登录创建角色并授权.png)
+
 ```下面是创建用户new_wah
 CREATE USER new_wah IDENTIFIED BY 123
 DEFAULT TABLESPACE "USERS"
@@ -26,13 +26,13 @@ GRANT CREATE VIEW TO new_wah WITH ADMIN OPTION;
 ```sql
     cat test4.sql
 ```
-![image](./img/运行脚本文件.png) 
+
 3.用自己的用户new_wah登录,并运行脚本文件 test4.sql: 
 ```sql
     sqlplus new_wah/123@localhost/pdborcl
     @test4.sql
 ```
-![image](./img/用自己的账号登录运行脚本.png)
+![image](./img/使用new_cy 登录，并运行脚本文件.png)
 ## 测试代码：
 ```
 一切就绪，开始测试：
@@ -103,24 +103,28 @@ WHERE a.tablespace_name = b.tablespace_name
 ```
 ## 查寻表：
 1.开始测试，查询员工：
-![image](./img/开始测试，查询员工.png)
+![image](./img/开始测试.png)
 2.查询分区情况和分区索引情况：
-![image](./img/查询分区情况和分区索引情况.png)
+![image](./img/查询分区索引情况.png)
 3.查询一个分区的数据：
-![image](./img/查询一个分区的数据.png)
+![image](./img/查询一个分区中的数据.png)
 4.统计用户的所有表并查询统计信息：
 
-![image](./统计用户的所有表并查询统计信息.png)
+![image](./统计用户的所有表并查询表的统计信息.png)
+
+![image](./统计用户的所有表并查询表的统计信息2.png)
 
 
 5.表空间使用：
-![image](./img/表空间使用.png)
+![image](./img/查询表的文件和空间使用信息.png)
 
 6.查看数据文件的大小：
 
 
-![image](./查看数据文件的大小.png)
+![image](./数据文件使用情况.png)
 
+7.递归查询某个员工及其所有下属子员工：
+![image](./img/递归查询某个员工及其所有下属子员工.png)
 
 ## 实验总结
 经过本次实验，我学习到了解Oracle表和视图的概念，学习使用SQL语句Create Table创建表，学习Select语句插入，修改，删除以及查询数据，学习使用SQL语句创建视图，学习部分存储过程和触发器的使用。实验不难，只要跟着老师的调子走，就能顺利完成。
