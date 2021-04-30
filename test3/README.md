@@ -11,29 +11,27 @@
 * 写出插入数据的语句和查询数据的语句，并分析语句的执行计划。
 * 进行分区与不分区的对比实验。
 ## 实验步骤
-1.首先创建自己的账号 new_wah，然后以 system 身份登录: 
+1.以 system 身份登录，给new_wah授权使用表空间: 
 ```sql
     ALTER USER new_wah QUOTA UNLIMITED ON USERS;
     ALTER USER new_wah_lfh QUOTA UNLIMITED ON USERS02;
     ALTER USER new_wah QUOTA UNLIMITED ON USERS03;
 ```
 
-![image](./img/1.png) 
+![image](./img/给权限.png) 
 
 
-2.用自己的账号new_登录,并运行脚本文件 test3.sql: 
-
-```sql
-    cat test3.sql
-```
-![image](./img/2.png) 
+2.用自己的账号new_wah登录,并运行脚本文件 test3.sql: 
 ```sql
     sqlplus new_wah/123@localhost/pdborcl
     @test3.sql
 ```
-![image](./img/3.png)
+
+![image](./img/运行脚本.png) 
+
+
 ## 查看数据库的使用情况
 以下样例查看表空间的数据库文件，以及每个文件的磁盘占用情况。
-![image](./img/4.png)
+![image](./img/查看使用率.png)
 ## 实验总结
 经过本次实验，我学习到了分区表的创建方法，通过实验以及浏览网上相关资料，基本掌握了各种分区方式的使用场景。实验不难，只要跟着老师的调子走，就能顺利完成。
