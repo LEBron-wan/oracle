@@ -48,3 +48,6 @@ select departments.department_name as "部门", count(employees.job_id) as "部�
 
 
 查询结果：![Image text](https://github.com/LEBron-wan/oracle/blob/main/test1/img/1.8.png)
+## 实验总结 ##
+
+本次实验是第一次对oracle数据库的查询，相比于Mysql数据库，前者跟后者的差距并不大，可能还需要后续更多的实验，我才能更加深刻感受到这两个数据库的不同之处。但在我看来，oracle数据库的查询，相较于Mysql有着更高的效率。
