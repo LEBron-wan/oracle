@@ -35,20 +35,20 @@ Oracle递归查询的语句格式是：
 ## 实验过程：
 
 1.使用new_wah用户登录，运行test5.sql脚本
-![image](./img/sys登录创建角色并授权.png)
+![image](./img/登录并运行脚本文件test5.png)
 
 
 
 2.开始测试：运行函数Get_SaleAmount(V_DEPARTMENT_ID NUMBER)
 
-![image](./img/sys登录创建角色并授权.png)
-![image](./img/1.png)
+
+![image](./img/第一个.png)
 
 
 4.执行过程Get_Employees(V_EMPLOYEE_ID NUMBER)
 
-![image](./img/sys登录创建角色并授权.png)
-![image](./img/2.png)
+
+![image](./img/第二个.png)
 
 ## 实验总结
 经过本次实验，我学习到了解PL/SQL语言结构了解PL/SQL变量和常量的声明和使用方法,学习条件语句的使用方法,学习分支语句的使用方法,学习循环语句的使用方法,学习常用的PL/SQL函数,学习包，过程，函数的用法。实验有挑战性，有些脚本只能在sqldeveloper上运行，对之前实验4的掌握程度还不够深入，跟着老师的调子走，最后是顺利完成。
