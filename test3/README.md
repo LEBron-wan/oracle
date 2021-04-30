@@ -11,11 +11,11 @@
 * 写出插入数据的语句和查询数据的语句，并分析语句的执行计划。
 * 进行分区与不分区的对比实验。
 ## 实验步骤
-1.首先创建自己的账号 new_yrf，然后以 system 身份登录: 
+1.首先创建自己的账号 new_wah，然后以 system 身份登录: 
 ```sql
-    ALTER USER new_yrf QUOTA UNLIMITED ON USERS;
-    ALTER USER new_yrf_lfh QUOTA UNLIMITED ON USERS02;
-    ALTER USER new_yrf QUOTA UNLIMITED ON USERS03;
+    ALTER USER new_wah QUOTA UNLIMITED ON USERS;
+    ALTER USER new_wah_lfh QUOTA UNLIMITED ON USERS02;
+    ALTER USER new_wah QUOTA UNLIMITED ON USERS03;
 ```
 
 ![image](./img/1.png) 
@@ -28,7 +28,7 @@
 ```
 ![image](./img/2.png) 
 ```sql
-    sqlplus new_yrf/123@localhost/pdborcl
+    sqlplus new_wah/123@localhost/pdborcl
     @test3.sql
 ```
 ![image](./img/3.png)
